@@ -54,6 +54,15 @@ The HotelsGo Assignment project follows a clean and modular architecture, separa
 
 *Clean Architecture With Flutter *
 
+## Project Information
+
+1. Flutter Version:
+
+![Flutter Version](https://img.shields.io/badge/Flutter-v3.13.6-blue.svg)
+
+2. Dart Version:
+
+![Dart Version](https://img.shields.io/badge/Dart-v3.1.3-blue.svg)
 
 
 
