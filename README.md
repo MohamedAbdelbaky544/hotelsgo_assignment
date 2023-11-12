@@ -78,5 +78,5 @@ Follow these steps to run the project locally:
 
 4. Run the App:
 
-  ```bash
-  flutter run
+   ```bash
+   flutter run
