@@ -6,7 +6,6 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:hotelsgo_assignment/core/services/service_locator.dart';
 import 'package:hotelsgo_assignment/presentation/view/home_screen.dart';
 import 'package:hotelsgo_assignment/presentation/widget/no_internet.dart';
-import 'package:device_preview/device_preview.dart';
 import 'presentation/controller/cubit/app_cubit.dart';
 
 void main() async {
@@ -21,10 +20,7 @@ void main() async {
   ]);
 
   runApp(
-    DevicePreview(
-      enabled: true,
-      builder: (context) => const MyApp(), // Wrap your app
-    ),
+    const MyApp(),
   );
 }
 
