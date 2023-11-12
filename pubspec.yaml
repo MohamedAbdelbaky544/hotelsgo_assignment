@@ -25,6 +25,7 @@ dependencies:
   bloc: ^8.1.2
   get_it: ^7.6.4 # used to dependency injection
   dio: ^5.3.3 # this package to network
+  shimmer: ^3.0.0 # to make shimmer effect while loading
 
 
 dev_dependencies:
@@ -42,9 +43,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/image/bolla.jpeg
+    - assets/image/map.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
