@@ -28,6 +28,7 @@ dependencies:
   shimmer: ^3.0.0 # to make shimmer effect while loading
   lottie: ^2.7.0 # to add animation from lottie 
   connectivity_plus: ^5.0.1 # check internet connection
+  device_preview: ^1.1.0 # to check responsive
 
 
 dev_dependencies:

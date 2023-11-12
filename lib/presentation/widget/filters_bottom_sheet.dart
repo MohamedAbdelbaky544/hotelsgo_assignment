@@ -16,7 +16,7 @@ class _FiltersBottomSheetState extends State<FiltersBottomSheet> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.grey.shade100,
-      height: MediaQuery.sizeOf(context).height * 0.9,
+      height: MediaQuery.sizeOf(context).height * 0.95,
       child: Column(
         children: [
           SizedBox(
@@ -54,9 +54,10 @@ class _FiltersBottomSheetState extends State<FiltersBottomSheet> {
                       onTap: () {
                         Navigator.pop(context);
                       },
-                      child: const Icon(
+                      child: Icon(
                         CupertinoIcons.xmark,
                         color: Colors.black,
+                        size: 20.w,
                       ),
                     ),
                   )

@@ -22,7 +22,7 @@ class Stars extends StatelessWidget {
               child: Icon(
                 CupertinoIcons.star_fill,
                 color: Colors.yellow.shade700,
-                size: 15,
+                size: 14.h,
               ),
             ),
           ),
@@ -39,7 +39,7 @@ class Stars extends StatelessWidget {
                   Icon(
                     CupertinoIcons.star_fill,
                     color: Colors.yellow.shade700,
-                    size: 15,
+                    size: 14.h,
                   ),
               ],
             ),
@@ -56,7 +56,7 @@ class Stars extends StatelessWidget {
                 Icon(
                   CupertinoIcons.star_fill,
                   color: Colors.yellow.shade700,
-                  size: 15,
+                  size: 14.h,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +65,7 @@ class Stars extends StatelessWidget {
                       Icon(
                         CupertinoIcons.star_fill,
                         color: Colors.yellow.shade700,
-                        size: 15,
+                        size: 14.h,
                       ),
                   ],
                 ),
@@ -88,7 +88,7 @@ class Stars extends StatelessWidget {
                       Icon(
                         CupertinoIcons.star_fill,
                         color: Colors.yellow.shade700,
-                        size: 15,
+                        size: 14.h,
                       ),
                   ],
                 ),
@@ -99,7 +99,7 @@ class Stars extends StatelessWidget {
                       Icon(
                         CupertinoIcons.star_fill,
                         color: Colors.yellow.shade700,
-                        size: 15,
+                        size: 14.h,
                       ),
                   ],
                 ),
@@ -121,14 +121,14 @@ class Stars extends StatelessWidget {
                       Icon(
                         CupertinoIcons.star_fill,
                         color: Colors.yellow.shade700,
-                        size: 15,
+                        size: 14.h,
                       ),
                   ],
                 ),
                 Icon(
                   CupertinoIcons.star_fill,
                   color: Colors.yellow.shade700,
-                  size: 15,
+                  size: 14.h,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -137,7 +137,7 @@ class Stars extends StatelessWidget {
                       Icon(
                         CupertinoIcons.star_fill,
                         color: Colors.yellow.shade700,
-                        size: 15,
+                        size: 14.h,
                       ),
                   ],
                 ),
