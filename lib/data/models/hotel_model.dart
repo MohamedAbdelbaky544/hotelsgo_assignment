@@ -17,7 +17,7 @@ class HotelModel extends Hotel {
         price: json['price'],
         currency: json['currency'],
         image: json['image'],
-        reviewScore: json['review_score'],
+        reviewScore: json['review_score'].toDouble(),
         review: json['review'],
         address: json['address'],
       );

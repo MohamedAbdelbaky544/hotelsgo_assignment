@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hotelsgo_assignment/domain/entity/hotel.dart';
+import 'package:shimmer/shimmer.dart';
 
 class SingleItemHotel extends StatelessWidget {
-  const SingleItemHotel({super.key});
-
+  const SingleItemHotel({super.key, required this.hotel});
+  final Hotel hotel;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -28,11 +30,28 @@ class SingleItemHotel extends StatelessWidget {
                     ),
                   ),
                   clipBehavior: Clip.antiAlias,
-                  child: Image.asset(
-                    'assets/image/bolla.jpeg',
+                  child: Image.network(
+                    hotel.image,
                     fit: BoxFit.cover,
+                    loadingBuilder: (context, child, loadingProgress) {
+                      if (loadingProgress == null) {
+                        return child;
+                      } else {
+                        return Shimmer.fromColors(
+                          baseColor: Colors.grey[300]!,
+                          highlightColor: Colors.grey[100]!,
+                          child: Container(
+                            color: Colors.white,
+                          ),
+                        );
+                      }
+                    },
+                    errorBuilder: (context, error, stackTrace) {
+                      return Image.asset('assets/image/hotelsgo_cover.jpg');
+                    },
                   ),
                 ),
+                //this will be clickable to add it to some were like wishlist
                 Align(
                   alignment: Alignment.topRight,
                   child: Padding(
@@ -53,7 +72,7 @@ class SingleItemHotel extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 10.h),
               child: Row(
                 children: [
-                  for (int i = 0; i < 5; i++)
+                  for (int i = 0; i < hotel.starts; i++)
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 2.w),
                       child: Icon(
@@ -78,7 +97,7 @@ class SingleItemHotel extends StatelessWidget {
               child: SizedBox(
                 width: 300.w,
                 child: Text(
-                  "Hotel Fairmont Nile City",
+                  hotel.name,
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w700,
@@ -101,7 +120,7 @@ class SingleItemHotel extends StatelessWidget {
                     ),
                     child: Center(
                       child: Text(
-                        "8.8",
+                        hotel.reviewScore.toString(),
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w800,
@@ -111,7 +130,7 @@ class SingleItemHotel extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Excellent",
+                    hotel.review,
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w300,
@@ -130,7 +149,7 @@ class SingleItemHotel extends StatelessWidget {
                         SizedBox(
                           width: 150.w,
                           child: Text(
-                            "12 miles from the center",
+                            hotel.address,
                             overflow: TextOverflow.ellipsis,
                             maxLines: 2,
                             style: TextStyle(
@@ -176,7 +195,7 @@ class SingleItemHotel extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "\$ 161",
+                            "\$ ${hotel.price.toString()}",
                             style: TextStyle(
                               color: Colors.green[800],
                               fontWeight: FontWeight.w900,

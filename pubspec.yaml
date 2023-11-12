@@ -26,6 +26,8 @@ dependencies:
   get_it: ^7.6.4 # used to dependency injection
   dio: ^5.3.3 # this package to network
   shimmer: ^3.0.0 # to make shimmer effect while loading
+  lottie: ^2.7.0 # to add animation from lottie 
+  connectivity_plus: ^5.0.1 # check internet connection
 
 
 dev_dependencies:
@@ -44,8 +46,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/image/bolla.jpeg
+    - assets/image/hotelsgo_cover.jpg
     - assets/image/map.jpg
+    - assets/animation/connectivity_animation.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
