@@ -66,4 +66,17 @@ Follow these steps to run the project locally:
    ```bash
    git clone https://github.com/MohamedAbdelbaky544/hotelsgo_assignment.git
 
+2. Navigate to the Project Directory:
+  
+   ```bash
+   cd hotelsgo_assignment
 
+3. Install Dependencies:
+  
+   ```bash
+   flutter pub get
+
+4. Run the App:
+
+  ```bash
+  flutter run
